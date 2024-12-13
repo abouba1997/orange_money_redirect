@@ -12,12 +12,12 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/payment-success", (req, res) => {
-  const redirectUrl = "myapp://(payment)/success";
+  const redirectUrl = "myapp://success";
   res.redirect(redirectUrl);
 });
 
 app.get("/payment-cancelled", (req, res) => {
-  const redirectUrl = "myapp://(payment)/cancelled";
+  const redirectUrl = "myapp://cancelled";
   res.redirect(redirectUrl);
 });
 
