@@ -21,6 +21,12 @@ app.get("/payment-cancelled", (req, res) => {
   res.redirect(redirectUrl);
 });
 
+app.get("/payment-notif", (req, res) => {
+  console.log({ req });
+  const redirectUrl = "myapp://(payment)/failed";
+  res.redirect(redirectUrl);
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
 });
